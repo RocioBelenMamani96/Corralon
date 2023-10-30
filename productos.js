@@ -1,3 +1,29 @@
+//BD ---------------------------------
+const productos = [
+  {
+    nombre: "Zapatos",
+    precio: 90,
+    url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  },
+  {
+    nombre: "Ropa",
+    precio: 100,
+    url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  },
+  {
+    nombre: "Autos",
+    precio: 50,
+    url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  },
+  {
+    nombre: "Libros",
+    precio: 30,
+    url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  },
+];
+
+//------------------------------------
+
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector(
 	'.container-cart-products'
@@ -14,25 +40,31 @@ const rowProduct = document.querySelector('.row-product');
 // Lista de todos los contenedores de productos
 const productsList = document.querySelector('.container-items');
 
-// Crea un elemento `li` para representar el producto en la lista.
-const li = document.createElement('li');
+function addItem(nombre, precio, url) {
+	// Crea un elemento `div` para representar el producto en la lista.
+	const div = document.createElement('div');
+	div.setAttribute('class', 'item');
 
-// Agrega el contenido del producto al elemento `li`.
-li.innerHTML = `
-	<figure>
-		<img
-			src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-			alt="producto"
-		/>
-	</figure>
-	<div class="info-product">
-		<h2>Zapatos Nike</h2>
-		<p class="price">$80</p>
-	</div>
-`;
+	div.innerHTML = `
+		<figure>
+			<img
+				src=${url}
+				alt="producto"
+			/>
+		</figure>
+		<div class="info-product">
+			<h2>${nombre}</h2>
+			<p class="price">$${precio}</p>
+			<button class="btn-add-cart">Añadir al carrito</button>
+		</div>
+	`;
+	
+	productsList.append(div);
+}
 
-//productsList.appendChild(li);
-productsList.append(li);
+productos.forEach((producto) => {
+	addItem(producto.nombre, producto.precio, producto.url);
+});
 
 // Variable de arreglos de Productos
 let allProducts = [];
