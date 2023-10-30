@@ -1,24 +1,29 @@
 //BD ---------------------------------
 const productos = [
   {
-    nombre: "Ceramica",
-    precio: 90,
+    nombre: "Ceramica Piso Pared 35x35",
+    precio: 2600,
     url: "https://ferreterialavalle.com.ar/wp-content/uploads/ceramicas.jpg",
   },
   {
-    nombre: "Herramientas",
-    precio: 100,
-    url: "https://ferreteriainkaforte.com/wp-content/uploads/2019/11/categorias-productos.png",
+    nombre: "Ladrillo Hueco de 12x18x33 cm",
+    precio: 450,
+    url: "https://http2.mlstatic.com/D_NQ_NP_928663-MLA51573289144_092022-O.webp",
   },
   {
-    nombre: "Ferreteria",
-    precio: 50,
-    url: "https://http2.mlstatic.com/D_NQ_NP_936068-MLA52763725270_122022-O.webp",
+    nombre: "Griferia cocina sobre mesada",
+    precio: 45000,
+    url: "https://bercovichsa.vtexassets.com/arquivos/ids/160239/griferia-cocina-estalgrif-zeus-mesada-1.jpg?v=637775052350200000",
   },
   {
-    nombre: "Arena",
-    precio: 30,
-    url: "",
+    nombre: "Arena fina 25 kg",
+    precio: 18000,
+    url: "https://es.hs-bulkbags.com/uploads/202130307/building-sand-bulk-bag50188189604.jpg",
+  },
+  {
+    nombre: "Martillo Carpintero",
+    precio: 6500,
+    url: "https://sodimacar.scene7.com/is/image/SodimacArgentina/115303X",
   },
 ];
 
