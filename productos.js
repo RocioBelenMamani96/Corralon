@@ -1,24 +1,24 @@
 //BD ---------------------------------
 const productos = [
   {
-    nombre: "Zapatos",
+    nombre: "Ceramica",
     precio: 90,
-    url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    url: "https://ferreterialavalle.com.ar/wp-content/uploads/ceramicas.jpg",
   },
   {
-    nombre: "Ropa",
+    nombre: "Herramientas",
     precio: 100,
-    url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    url: "https://ferreteriainkaforte.com/wp-content/uploads/2019/11/categorias-productos.png",
   },
   {
-    nombre: "Autos",
+    nombre: "Ferreteria",
     precio: 50,
-    url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    url: "https://http2.mlstatic.com/D_NQ_NP_936068-MLA52763725270_122022-O.webp",
   },
   {
-    nombre: "Libros",
+    nombre: "Arena",
     precio: 30,
-    url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    url: "",
   },
 ];
 
