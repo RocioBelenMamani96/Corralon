@@ -25,6 +25,41 @@ const productos = [
     precio: 6500,
     url: "https://sodimacar.scene7.com/is/image/SodimacArgentina/115303X",
   },
+  {
+    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    precio: 28500,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
 ];
 
 //------------------------------------
