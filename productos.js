@@ -215,12 +215,13 @@ const productos = [
 // Recibir valores por parametros ------------------
 
 // Obtener los parámetros de la URL
-//var parametros = new URLSearchParams(location.search);
+var parametros = new URLSearchParams(location.search);
 
 // Ejemplo Imprimir los valores de los parámetros
 // console.log(parametros.get("nombre")); // Juan
-// console.log(parametros.get("edad")); // 25
-
+//console.log(parametros.get("idProv")); // 25
+const idProv = parametros.get("idProv");
+console.log("idProv: " + idProv);
 
 //------------------------------------
 
