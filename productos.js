@@ -1,156 +1,226 @@
 //BD ---------------------------------
 const productos = [
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "Ceramica Piso Pared 35x35",
     precio: 2600,
     url: "https://ferreterialavalle.com.ar/wp-content/uploads/ceramicas.jpg",
   },
   {
+    idProd: 2,
+    idProv: 1,
     nombre: "Ladrillo Hueco de 12x18x33 cm",
     precio: 450,
     url: "https://http2.mlstatic.com/D_NQ_NP_928663-MLA51573289144_092022-O.webp",
   },
   {
+    idProd: 3,
+    idProv: 2,
     nombre: "Griferia cocina sobre mesada",
     precio: 45000,
     url: "https://bercovichsa.vtexassets.com/arquivos/ids/160239/griferia-cocina-estalgrif-zeus-mesada-1.jpg?v=637775052350200000",
   },
   {
+    idProd: 4,
+    idProv: 2,
     nombre: "Arena fina 25 kg",
     precio: 18000,
     url: "https://es.hs-bulkbags.com/uploads/202130307/building-sand-bulk-bag50188189604.jpg",
   },
   {
+    idProd: 5,
+    idProv: 3,
     nombre: "Martillo Carpintero",
     precio: 6500,
     url: "https://sodimacar.scene7.com/is/image/SodimacArgentina/115303X",
   },
   {
+    idProd: 6,
+    idProv: 3,
     nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
     precio: 28500,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 7,
+    idProv: 4,
     nombre: "Juego de Baño 4 piezas Alberdi",
     precio: 180000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_830570-MLA31802694062_082019-F.webp",
   },
   {
+    idProd: 8,
+    idProv: 4,
     nombre: "Escalera de madera",
     precio: 14000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 9,
+    idProv: 5,
     nombre: "Cemento",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 10,
+    idProv: 5,
     nombre: "Chapas",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
-  {
+  /* {
+    idProd: 1,
+    idProv: 1,
     nombre: "carretillas",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "hierros",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "pala",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "pico",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
+    idProd: 1,
+    idProv: 1,
     nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
+  }, */
 ];
+
+// Recibir valores por parametros ------------------
+
+// Obtener los parámetros de la URL
+//var parametros = new URLSearchParams(location.search);
+
+// Ejemplo Imprimir los valores de los parámetros
+// console.log(parametros.get("nombre")); // Juan
+// console.log(parametros.get("edad")); // 25
+
 
 //------------------------------------
 
@@ -192,7 +262,9 @@ function addItem(nombre, precio, url) {
 	productsList.append(div);
 }
 
-productos.forEach((producto) => {
+const filtrado = productos.filter((map) => map.idProv === idProv);
+
+filtrado.forEach((producto) => {
 	addItem(producto.nombre, producto.precio, producto.url);
 });
 
