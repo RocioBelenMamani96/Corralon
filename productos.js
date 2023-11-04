@@ -31,32 +31,122 @@ const productos = [
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
-    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    nombre: "Juego de Baño 4 piezas Alberdi",
+    precio: 180000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_830570-MLA31802694062_082019-F.webp",
+  },
+  {
+    nombre: "Escalera de madera",
+    precio: 14000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "Cemento",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
-    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    nombre: "Chapas",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
-    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    nombre: "carretillas",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
-    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    nombre: "hierros",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
-    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    nombre: "pala",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
   {
-    nombre: "Combo Kit sanitario instalacion Baño Caño cloacal Awaduct",
+    nombre: "pico",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
+    precio: 140000,
+    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
+  },
+  {
+    nombre: "cinta metrica",
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
