@@ -70,146 +70,6 @@ const productos = [
     precio: 140000,
     url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
   },
-  /* {
-    idProd: 1,
-    idProv: 1,
-    nombre: "carretillas",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "hierros",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "pala",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "pico",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  },
-  {
-    idProd: 1,
-    idProv: 1,
-    nombre: "cinta metrica",
-    precio: 140000,
-    url: "https://http2.mlstatic.com/D_NQ_NP_2X_874667-MLA69030271445_042023-F.webp",
-  }, */
 ];
 
 // Recibir valores por parametros ------------------
@@ -217,11 +77,8 @@ const productos = [
 // Obtener los parámetros de la URL
 var parametros = new URLSearchParams(location.search);
 
-// Ejemplo Imprimir los valores de los parámetros
-// console.log(parametros.get("nombre")); // Juan
-//console.log(parametros.get("idProv")); // 25
 const idProv = parametros.get("idProv");
-console.log("idProv: " + idProv);
+//console.log("idProv: " + idProv);
 
 //------------------------------------
 
@@ -263,7 +120,7 @@ function addItem(nombre, precio, url) {
 	productsList.append(div);
 }
 
-const filtrado = productos.filter((map) => map.idProv === idProv);
+const filtrado = productos.filter((map) => map.idProv == idProv);
 
 filtrado.forEach((producto) => {
 	addItem(producto.nombre, producto.precio, producto.url);
