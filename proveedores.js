@@ -57,26 +57,19 @@ proveedores.forEach((proveedor) => {
 proveedorList.addEventListener('click', e => {
 	if (e.target.classList.contains('btn-open-products')) {
 		const proveedor = e.target.parentElement;
+		const proveedorId = proveedor.children.idProv.value;
+		//console.log("idProv seleccionado : " + proveedorId);
 
-		//const elemento = proveedores.find((x) => x.idProv === proveedor.idProv);
-		const elemento = proveedores.find((x) => x.idProv === 1);
-		
-
-		// Pasar el objeto proveedor/elemento a la página index.html
-		// var parametroObjeto = elemento;
-		// var parametrosJSON = JSON.stringify(parametroObjeto);
+		const elemento = proveedores.find((x) => x.idProv == proveedorId);
   
 		// Generar la URL de redirección
-		//var urlRedireccion = "productos.html" + "?parametros=" + parametrosJSON;
 		var urlRedireccion = "productos.html" + "?idProv=" + elemento.idProv;
 
 		// Redireccionar a la página productos.html
 		if (confirm("¿Desea abrir la página de productos para este proveedor?")) {
-			console.log("URL: "+ urlRedireccion);
+			//console.log("URL: "+ urlRedireccion);
 			location.href = urlRedireccion;
 		}
-		//location.href = urlRedireccion;
-		//location.href = "productos.html";
 	}
 });
 
