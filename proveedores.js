@@ -2,23 +2,23 @@
 const proveedores = [
   {
 	idProv: 1,
-    nombre: "Corralón Don Coco",
-    url: "https://lh3.googleusercontent.com/p/AF1QipPU7gcapkGYj0cGR-49i9c4Qm1wdSYZAhnSYo21=s1360-w1360-h1020",
+    nombre: "Reino Ceramicos",
+    url: "https://http2.mlstatic.com/D_NQ_NP_622017-MLA72523211979_102023-O.webp",
   }, 
   {
 	idProv: 2,
-    nombre: "Metal SRL",
-    url: "https://lh3.googleusercontent.com/p/AF1QipPU7gcapkGYj0cGR-49i9c4Qm1wdSYZAhnSYo21=s1360-w1360-h1020",
+    nombre: "Paiting",
+    url: "https://static.vecteezy.com/system/resources/previews/002/685/734/non_2x/painting-company-logo-design-illustration-eps-format-suitable-for-your-design-needs-logo-illustration-animation-etc-vector.jpg",
   }, 
   {
 	idProv: 3,
-    nombre: "Alum",
-    url: "https://lh3.googleusercontent.com/p/AF1QipPU7gcapkGYj0cGR-49i9c4Qm1wdSYZAhnSYo21=s1360-w1360-h1020",
+    nombre: "Todo Obras",
+    url: "https://www.zarla.com/images/zarla-todo-obras-1x1-2400x2400-20220131-krrx9mgrgdwxkggqf9gh.png?crop=1:1,smart&width=250&dpr=2",
   }, 
   {
 	idProv: 4,
-    nombre: "Maderas",
-    url: "https://lh3.googleusercontent.com/p/AF1QipPU7gcapkGYj0cGR-49i9c4Qm1wdSYZAhnSYo21=s1360-w1360-h1020",
+    nombre: "Construction Company",
+    url: "https://images.examples.com/wp-content/uploads/2017/11/logo-14-.jpg",
   }, 
 ];
 
