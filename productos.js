@@ -240,18 +240,36 @@ productsList.addEventListener('click', e => {
 });
 
 rowProduct.addEventListener('click', e => {
-	if (e.target.classList.contains('icon-close')) {
-		const product = e.target.parentElement;
-		const title = product.querySelector('p').textContent;
+  if (e.target.classList.contains('icon-close')) {
+      const product = e.target.parentElement;
+      const title = product.querySelector('p').textContent;
 
-		allProducts = allProducts.filter(
-			product => product.title !== title
-		);
+      allProducts = allProducts.filter(
+          product => product.title !== title
+      );
 
-		console.log(allProducts);
+      showHTML();
+      saveCartToLocalStorage();
+  }
 
-		showHTML();
-	}
+  if (e.target.classList.contains('btn-increment')) {
+      const title = e.target.dataset.title;
+      const action = e.target.dataset.action;
+
+      allProducts = allProducts.map(product => {
+          if (product.title === title) {
+              if (action === 'increment') {
+                  product.quantity++;
+              } else if (action === 'decrement' && product.quantity > 1) {
+                  product.quantity--;
+              }
+          }
+          return product;
+      });
+
+      showHTML();
+      saveCartToLocalStorage();
+  }
 });
 
 // Funcion para mostrar  HTML
@@ -267,44 +285,95 @@ const showHTML = () => {
 	}
 
 	// Limpiar HTML
-	rowProduct.innerHTML = '';
+  rowProduct.innerHTML = '';
 
-	let total = 0;
-	let totalOfProducts = 0;
+  let total = 0;
+  let totalOfProducts = 0;
 
-	allProducts.forEach(product => {
-		const containerProduct = document.createElement('div');
-		containerProduct.classList.add('cart-product');
+  allProducts.forEach(product => {
+      const containerProduct = document.createElement('div');
+      containerProduct.classList.add('cart-product');
 
-		containerProduct.innerHTML = `
-            <div class="info-cart-product">
-                <span class="cantidad-producto-carrito">${product.quantity}</span>
-                <p class="titulo-producto-carrito">${product.title}</p>
-                <span class="precio-producto-carrito">${product.price}</span>
-            </div>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="icon-close"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                />
-            </svg>
-        `;
+      containerProduct.innerHTML = `
+          <div class="info-cart-product">
+              <img src="${getProductImage(product.title)}" alt="${product.title}" class="product-image">
+              <span class="cantidad-producto-carrito">${product.quantity}</span>
+              <p class="titulo-producto-carrito">${product.title}</p>
+              <span class="precio-producto-carrito">${product.price}</span>
+          </div>
+          <div class="button-group">
+              <button class="btn-increment" data-title="${product.title}" data-action="increment">+</button>
+              <span class="quantity">${product.quantity}</span>
+              <button class="btn-increment" data-title="${product.title}" data-action="decrement">-</button>
+          </div>
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon-close"
+          >
+              <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+              />
+          </svg>
+      `;
 
-		rowProduct.append(containerProduct);
+      rowProduct.append(containerProduct);
 
-		total =
-			total + parseInt(product.quantity * product.price.slice(1));
-		totalOfProducts = totalOfProducts + product.quantity;
-	});
+      total = total + parseInt(product.quantity * product.price.slice(1));
+      totalOfProducts = totalOfProducts + product.quantity;
+  });
 
-	valorTotal.innerText = `$${total}`;
-	countProducts.innerText = totalOfProducts;
+  valorTotal.innerText = `$${total}`;
+  countProducts.innerText = totalOfProducts;
+}
+// Al final del archivo después de otros listeners
+const btnConfirmarCompra = document.querySelector('.btn-confirmar-compra');
+const btnImprimirFactura = document.querySelector('.btn-imprimir-factura');
+
+btnConfirmarCompra.addEventListener('click', () => {
+    // Aquí puedes agregar lógica para confirmar la compra
+    alert('Compra confirmada. Gracias por tu compra!');
+    // Puedes agregar más acciones, como limpiar el carrito o redirigir a otra página
+});
+
+btnImprimirFactura.addEventListener('click', () => {
+  if (allProducts.length > 0) {
+    generatePDF();
+  } else {
+    alert('El carrito está vacío. No hay nada para imprimir.');
+  }
+});
+
+
+
+const getProductImage = (productName) => {
+  const product = productos.find(p => p.nombre === productName);
+  return product ? product.url : ''; // Devuelve la URL de la imagen o cadena vacía si no se encuentra el producto
 };
+
+const generatePDF = () => {
+  const pdf = new jsPDF();
+
+  pdf.text('Factura de Compra', 20, 10);
+  pdf.text('--------------------------', 20, 15);
+
+  let y = 30;
+
+  allProducts.forEach((product, index) => {
+    pdf.text(`${index + 1}. ${product.title} - Cantidad: ${product.quantity} - Precio: ${product.price}`, 20, y);
+    y += 10;
+  });
+
+  pdf.text('--------------------------', 20, y);
+  pdf.text(`Total: $${valorTotal.innerText}`, 20, y + 10);
+
+
+pdf.save('factura_compra.pdf');
+
+};
+
