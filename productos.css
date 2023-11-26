@@ -12,13 +12,15 @@ body {
     max-width: 1200px;
     font-family: 'Lato';
     color: #333;
-    background-color: #d3d3d3;
+    /* background-color: #d3d3d3; */
+    background: linear-gradient(to top, #dcdcdc, black);
 }
 
 .icon-cart {
     width: 40px;
     height: 40px;
-    stroke: #000;
+    /* stroke: #000; */
+    stroke: #0CB7F2;
 }
 
 .icon-cart:hover {
@@ -35,6 +37,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 30px 0 40px 0;
+    color: #0CB7F2;
 }
 
 .container-icon {
@@ -47,8 +50,8 @@ header {
     position: absolute;
     top: 50%;
     left: 30px;
-    background-color: #000;
-    color: #fff;
+    background-color: #0CB7F2;
+    color: black;
     width: 25px;
     height: 25px;
     display: flex;
@@ -71,6 +74,7 @@ header {
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
+    color: black;
 
 }
 
