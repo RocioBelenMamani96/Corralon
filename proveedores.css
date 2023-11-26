@@ -12,6 +12,7 @@ body {
     max-width: 1200px;
     font-family: 'Lato';
     color: #333;
+    background-color: #d3d3d3;
 }
 
 .icon-cart {
@@ -147,6 +148,8 @@ header {
 
 .item {
     border-radius: 10px;
+    background: linear-gradient(to top, rgb(55, 55, 55), rgb(255, 255, 255));
+    color: white;
 }
 
 .item:hover {
@@ -185,7 +188,7 @@ header {
 .info-product button {
     border: none;
     background: none;
-    background-color: #0CB7F2;
+    background: linear-gradient(to top, rgb(92, 92, 92), #0CB7F2);
     color: #fff;
     padding: 15px 10px;
     cursor: pointer;
